@@ -1,0 +1,11 @@
+table {
+    display: none;
+}
+#categories li {
+    cursor: pointer;
+    color: #0088cc;
+}
+
+#categories li:hover {
+    text-decoration: underline;
+}

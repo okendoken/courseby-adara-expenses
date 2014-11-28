@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Purchases</title>
+	<link rel='stylesheet' href='css/bootstrap.css' type='text/css' media='all'>
+	<link rel = "stylesheet" href="css/style.css">
+	<meta charset="utf-8">
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/scripts.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<h2>Expense organizer</h2>
+		<div class="col-md-4">
+			<h4>Categories:</h4>
+			<ul id="categories">
+			</ul>
+			<form id="categories-form">
+				<div class="form-group">
+					<input id="category"
+						   class="form-control"
+						   type="text"
+						   placeholder="Category">
+				</div>
+					<button type="submit" class="btn btn-primary">Add</button>
+			</form>
+		</div>
+		<div class="col-md-4">
+			<h4>Add purchase:</h4>
+			<div id="purchases">
+				<form id="purchases-form">
+					<div class="form-group">
+						<input id="description"
+							   class="form-control"
+							   type="text"
+							   placeholder="Description">
+					</div>
+					<div class="form-group">
+						<input id="price"
+							   class="form-control "
+							   type="text"
+							   placeholder="Price">
+					</div>
+					<div class="form-group">
+						<input id="quantity"
+							   class="form-control "
+							   type="text"
+							   placeholder="Quantity">
+					</div>
+					<button type="submit" class="btn btn-primary">Track!</button>
+				</form>
+			</div>
+		</div>
+		<div class="col-md-4 p-table">
+			<h4>Category: <span id="activeCategory"></span></h4>
+			<span class="havnt-categories">You haven't categories yet</span>
+			<h4>Purchases:</h4>
+			<p class="havnt-purchases">You haven't purchases yet</p>
+			<table class="table table-striped">
+				<tr>
+					<td>Description</td>
+					<td>Price</td>
+					<td>Quantity</td>
+					<td>Total cost</td>
+				</tr>
+			</table>
+			<div id="total-amount">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
